@@ -3,6 +3,7 @@
 “Over the course of the pandemic from March to July 2020 the proportion of participants at risk for clinical depression ranges from 46% to 61%, up to a 90% increase in depression rates compared to the same population just prior to the pandemic.” - Osea Giuntella
 
 During the pandemic, many people had time to reflect on who they are and whom they want to become. Difficulties related to job, social life, and existence as a whole have been challenging over many months. This app is an opportunity to track one’s own development. Being able to see one’s moods over several days and months can lead to a better understanding of one’s own mental status. Furthermore, the app functions as a diary in which more detailed information can be added so that it is possible to understand one’s mindset at the time. 
+
 Keeping a diary is an opportunity to build a relationship with oneself, away from other people’s influence or opinions. It is a way to express inner struggles and motivation. Being able to increase emotional intimacy and being able to express oneself is a helpful tool to preserve mental health while also enabling better communication not only with oneself but with other people around. 
 
 
