@@ -1,4 +1,4 @@
-# Diary_App
+# Diary App
 
 ## Motivation
 
@@ -11,28 +11,28 @@ Keeping a diary is an opportunity to build a relationship with oneself, away fro
 
 ## Requirements (MoSCoW)
 Must have: 
-        *  Option to create/ choose a mood. 
-        *  Overview of all moods, including filters by moods. 
-        *  Creation of diary entry, including adding text, pictures. 
-          A question of the day. 
-          Send reminders. 
-          Log in and creation of user. 
-          Browse function of previous entries. Connection to database
+* Option to create/ choose a mood. 
+* Overview of all moods, including filters by moods. 
+* Creation of diary entry, including adding text, pictures. 
+* A question of the day. 
+* Send reminders. 
+* Log in and creation of user. 
+* Browse function of previous entries. Connection to database
 
 Should have: 
-          Overview of moods by activity. 
-          Link to calendar to add activities into entry. 
-          Possibility to add/ delete or change question of the day.
+* Overview of moods by activity. 
+* Link to calendar to add activities into entry. 
+* Possibility to add/ delete or change question of the day.
 
 Could have: 
-          Diary entry share function. 
-          Graphic display of mood changes. 
-          Attachment of places into entries through Google maps. 
-          Average mood of the week/month. 
-          Possibility to add goals and track the achievement. 
+* Diary entry share function. 
+* Graphic display of mood changes. 
+* Attachment of places into entries through Google maps. 
+* Average mood of the week/month. 
+* Possibility to add goals and track the achievement. 
 
 Won’t have: 
-          Suggestions for local mental health courses or numbers. 
-          Achievements or rewards for keeping a diary. 
-          Tracker of how many days in a row the diary was kept. 
+* Suggestions for local mental health courses or numbers. 
+* Achievements or rewards for keeping a diary. 
+* Tracker of how many days in a row the diary was kept. 
 
