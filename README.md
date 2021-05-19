@@ -11,25 +11,24 @@ Keeping a diary is an opportunity to build a relationship with oneself, away fro
 
 ## Requirements (MoSCoW)
 Must have: 
-* Option to create/ choose a mood. 
-* Overview of all moods, including filters by moods. 
-* Creation of diary entry, including adding text, pictures. 
-* A question of the day. 
-* Send reminders. 
-* Log in and creation of user. 
-* Browse function of previous entries. Connection to database
+* Option to create/ choose a mood.                                                               DONE
+* Overview of all moods, including filters by moods.                                             DONE (no filters)
+* Creation of diary entry, including adding text, pictures.                                      DONE (no upload of pictures)
+* A question of the day.                                                                         DONE
+* Log in and creation of user.                                                                   DONE
+* Browse function of previous entries. Connection to database                                    DONE
 
 Should have: 
-* Overview of moods by activity. 
-* Link to calendar to add activities into entry. 
-* Possibility to add/ delete or change question of the day.
+* Link to calendar to add activities into entry.                                             NOT DONE
+* Send reminders.                                                                            NOT DONE
+* Possibility to add/ delete or change question of the day.                                      DONE
 
 Could have: 
-* Diary entry share function. 
-* Graphic display of mood changes. 
-* Attachment of places into entries through Google maps. 
-* Average mood of the week/month. 
-* Possibility to add goals and track the achievement. 
+* Diary entry share function.                                                                NOT DONE (in hensight it doesnt make sense to add this)
+* Graphic display of mood changes.                                                           NOT DONE
+* Attachment of places into entries through Google maps.                                     NOT DONE
+* Average mood of the week/month.                                                            NOT DONE
+* Possibility to add goals and track the achievement.                                        NOT DONE
 
 Won’t have: 
 * Suggestions for local mental health courses or numbers. 
