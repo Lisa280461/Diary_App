@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.NewEntryFragment"
+    android:background="@drawable/green_paint">
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="40dp"
+        android:clipToPadding="false"
+        android:paddingBottom="10dp"
+        app:layout_anchor="@+id/scrollView2"
+        app:layout_anchorGravity="center">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true">
+
+
+            <EditText
+                android:id="@+id/entryTitle"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="32dp"
+                android:background="@null"
+                android:hint="Entry Title"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="no"
+                android:includeFontPadding="false"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/darkBlue"
+                android:textSize="20sp"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="6dp" />
+
+            <TextView
+                android:id="@+id/textDateTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:includeFontPadding="false"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/entryTitle"
+                app:layout_constraintStart_toStartOf="@+id/entryTitle"
+                app:layout_constraintTop_toBottomOf="@+id/entryTitle" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textDateTime" />
+
+            <TextView
+                android:id="@+id/textQuestion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:includeFontPadding="false"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+            <EditText
+                android:id="@+id/entryAnswerQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@null"
+                android:gravity="top"
+                android:hint="Write your answer..."
+                android:importantForAutofill="no"
+                android:includeFontPadding="false"
+                android:inputType="textMultiLine"
+                android:minHeight="100dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/darkBlue"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@id/textQuestion"
+                tools:layout_editor_absoluteX="-16dp" />
+
+            <EditText
+                android:id="@+id/entryDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="top"
+                android:hint="Write your entry..."
+                android:importantForAutofill="no"
+                android:includeFontPadding="false"
+                android:inputType="textMultiLine"
+                android:minHeight="200dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/darkBlue"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@+id/entryAnswerQuestion"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <Button
+                android:id="@+id/saveEntry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save Entry"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/entryDescription"
+                tools:layout_editor_absoluteY="381dp" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Diary App</string>
+
+    <string name="navigation_drawer_open">Drawer Open</string>
+    <string name="navigation_drawer_close">Drawer Closed</string>
+
+    <string name="delete_word_preamble">Deleting </string>
+
+    <string-array name="mood_array">
+        <item>Please Select A Mood...</item>
+        <item>FABULOUS</item>
+        <item>GOOD</item>
+        <item>NEUTRAL</item>
+        <item>NOT TOO GOOD</item>
+        <item>BAD</item>
+    </string-array>
+</resources>
+
