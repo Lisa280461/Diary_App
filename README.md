@@ -11,27 +11,43 @@ Keeping a diary is an opportunity to build a relationship with oneself, away fro
 
 ## Requirements (MoSCoW)
 Must have: 
-* Option to create/ choose a mood...................................DONE
-* Overview of all moods, including filters by moods..............................................DONE (no filters)
-* Creation of diary entry, including adding text, pictures.......................................DONE (no upload of pictures)
-* A question of the day..........................................................................DONE
-* Log in and creation of user....................................................................DONE
-* Browse function of previous entries. Connection to database....................................DONE
+* The app must have the option to create/ choose a mood...................................DONE
+* The app must have the option to overview all moods, including filters by moods..............................................DONE (no filters)
+* The app must have the option to create a diary entry................................................DONE
+* The app must have the option to anwer a question of the day..........................................................................DONE
+* The app must have the option to Log in and create a user....................................................................DONE
+* The app must protect user data....................................................DONE
+* The app must have the option to browse previous entries. Connection to database....................................DONE
 
 Should have: 
-* Link to calendar to add activities into entry. ............................................NOT DONE
-* Send reminders.............................................................................NOT DONE
-* Possibility to add/ delete or change question of the day.......................................DONE
+* The app should have the option to link to calendar to add activities into entry. ............................................NOT DONE
+* The app should have the option to add/ delete or change question of the day.......................................DONE
 
 Could have: 
-* Diary entry share function.................................................................NOT DONE (in hensight it doesnt make sense to add this)
-* Graphic display of mood changes............................................................NOT DONE
-* Attachment of places into entries through Google maps......................................NOT DONE
-* Average mood of the week/month.............................................................NOT DONE
-* Possibility to add goals and track the achievement.........................................NOT DONE
+* The app could have the option to send reminders
+* The app could have the option to share an entry
+* The app could have the option to graphically display mood changes
+* The app could have the option to attach places into entries through Google maps
+* The app could have the option to add goals and track the achievement
 
 Won’t have: 
-* Suggestions for local mental health courses or numbers. 
-* Achievements or rewards for keeping a diary. 
-* Tracker of how many days in a row the diary was kept. 
+* The app will not have the option to suggest local mental health courses or numbers. 
+* The app will not have the option to get achievements or rewards for keeping a diary. 
+* The app will not have the option to track how many days in a row the diary was kept. 
 
+## Video Link
+https://youtu.be/c0d0ZMvyq1Q
+
+## Resources
+Log in and register –
+Suggested code by firebase
+
+Spinner Code -
+https://stackoverflow.com/questions/52233359/a-spinner-inside-a-fragment
+https://developer.android.com/guide/topics/ui/controls/spinner
+
+Swiping function in the entries and question fragments –
+https://google-developer-training.github.io/android-developer-advanced-course-practicals/unit-6-working-with-architecture-components/lesson-14-room,-livedata,-viewmodel/14-1-b-room-delete-data/14-1-b-room-delete-data.html
+
+General set up of app (dao, database, repository)
+https://github.com/KasperKnop/ArchitectureExample
