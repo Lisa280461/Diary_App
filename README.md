@@ -35,20 +35,3 @@ Won’t have:
 * Achievements or rewards for keeping a diary. 
 * Tracker of how many days in a row the diary was kept. 
 
-##Video Link
-
-
-
-## External Resources
-Log in and register –
-Suggested code by firebase
-
-Spinner Code -
-https://stackoverflow.com/questions/52233359/a-spinner-inside-a-fragment
-https://developer.android.com/guide/topics/ui/controls/spinner
-
-Swiping function in the entries and question fragments –
-https://google-developer-training.github.io/android-developer-advanced-course-practicals/unit-6-working-with-architecture-components/lesson-14-room,-livedata,-viewmodel/14-1-b-room-delete-data/14-1-b-room-delete-data.html
-
-General set up of app (dao, database, repository)
-https://github.com/KasperKnop/ArchitectureExample

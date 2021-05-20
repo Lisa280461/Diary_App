@@ -8,11 +8,13 @@ import androidx.lifecycle.LiveData;
 
 import com.example.diaryapp.model.questionsOfTheDay.Question;
 import com.example.diaryapp.model.questionsOfTheDay.QuestionRepository;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import java.util.List;
 
 public class QuestionViewModel extends AndroidViewModel {
-
+    private String userEmail=null;
     private final QuestionRepository repository;
     private final LiveData<List<Question>> randomQuestion;
 
@@ -20,10 +22,16 @@ public class QuestionViewModel extends AndroidViewModel {
         super(app);
         repository = QuestionRepository.getInstance(app);
         randomQuestion = repository.getRandomQuestion();
+
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        if (user != null) {
+            userEmail = user.getEmail();
+        }
+
     }
 
-    public LiveData<List<Question>> getAllQuestions() {
-        return repository.getAllQuestions();
+    public LiveData<List<Question>> getAllQuestionsByUser() {
+        return repository.getAllQuestionsByUser(userEmail);
     }
 
     public LiveData<List<Question>> getRandomQuestion()

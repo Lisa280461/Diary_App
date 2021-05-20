@@ -20,14 +20,20 @@ public class QuestionRepository {
     private static QuestionRepository instance;
     private final ExecutorService executorService;
     private final QuestionDao questionDao;
-    private final LiveData<List<Question>> allQuestions;
+    private final LiveData<List<Question>> allQuestionsByUser;
     private final LiveData<List<Question>> randomQuestion;
 
 
     public QuestionRepository(Application application) {
         QuestionDatabase database = QuestionDatabase.getInstance(application);
         questionDao = database.questionDao();
-        allQuestions = questionDao.getAllQuestions();
+
+        String userEmail=null;
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        if (user != null) {
+            userEmail = user.getEmail();
+        }
+        allQuestionsByUser = questionDao.getQuestionsByUser(userEmail);
         randomQuestion = questionDao.getRandomQuestion();
 
         executorService = Executors.newFixedThreadPool(2);
@@ -41,8 +47,8 @@ public class QuestionRepository {
         return instance;
     }
 
-    public LiveData<List<Question>> getAllQuestions() {
-        return allQuestions;
+    public LiveData<List<Question>> getAllQuestionsByUser(String userEmail) {
+        return allQuestionsByUser;
     }
 
     public LiveData<List<Question>> getRandomQuestion() {

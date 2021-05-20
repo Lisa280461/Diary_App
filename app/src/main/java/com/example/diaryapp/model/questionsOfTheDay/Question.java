@@ -13,8 +13,12 @@ public class Question {
     @ColumnInfo(name = "question")
     private String question;
 
-    public Question(String question) {
+    @ColumnInfo(name = "userEmail")
+    private String userEmail;
+
+    public Question(String question, String userEmail) {
         this.question = question;
+        this.userEmail = userEmail;
     }
 
 
@@ -33,5 +37,13 @@ public class Question {
 
     public void setQuestion(String question) {
         this.question = question;
+    }
+
+    public String getUserEmail() {
+        return userEmail;
+    }
+
+    public void setUserEmail(String userEmail) {
+        this.userEmail = userEmail;
     }
 }

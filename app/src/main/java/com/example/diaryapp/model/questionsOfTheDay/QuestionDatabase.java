@@ -9,7 +9,7 @@ import androidx.room.RoomDatabase;
 import androidx.sqlite.db.SupportSQLiteDatabase;
 
 
-@Database(entities = Question.class, version = 1, exportSchema = false)
+@Database(entities = Question.class, version = 2, exportSchema = false)
 public abstract class QuestionDatabase extends RoomDatabase {
     private static com.example.diaryapp.model.questionsOfTheDay.QuestionDatabase instance;
 

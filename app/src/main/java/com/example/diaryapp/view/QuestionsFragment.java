@@ -21,6 +21,8 @@ import com.example.diaryapp.R;
 import com.example.diaryapp.model.questionsOfTheDay.Question;
 import com.example.diaryapp.model.questionsOfTheDay.QuestionAdapter;
 import com.example.diaryapp.viewmodel.QuestionViewModel;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -52,7 +54,7 @@ public class QuestionsFragment extends Fragment {
         layoutManager = new LinearLayoutManager(getContext().getApplicationContext());
         recyclerView.setLayoutManager(layoutManager);
 
-        viewModel.getAllQuestions().observe(getViewLifecycleOwner(), new Observer<List<Question>>() {
+        viewModel.getAllQuestionsByUser().observe(getViewLifecycleOwner(), new Observer<List<Question>>() {
             @Override
             public void onChanged(List<Question> questions) {
 
@@ -91,7 +93,12 @@ public class QuestionsFragment extends Fragment {
     }
 
     public void saveQuestion(View v) {
-        viewModel.insert(new Question(editText.getText().toString()));
+        String userEmail = null;
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        if (user != null) {
+            userEmail = user.getEmail();
+        }
+        viewModel.insert(new Question(editText.getText().toString(),userEmail));
     }
 
 
